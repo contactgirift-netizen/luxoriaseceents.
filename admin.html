@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Store Admin | Luxoria Scents</title><link rel="icon" href="assets/luxoria-logo.svg"><link rel="stylesheet" href="admin.css">  <meta name="description" content="Luxoria Scents store administration dashboard.">
+  <meta name="keywords" content="Luxoria Scents admin">
+  <meta property="og:title" content="Store Admin | Luxoria Scents">
+  <meta property="og:description" content="Luxoria Scents store administration dashboard.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+<div id="loginScreen" class="login-screen"><form id="loginForm" class="login-card"><img src="assets/Minimal LUXORIA SCENTS Logo.png"><span class="eyebrow">STORE MANAGEMENT</span><h1>Admin Login</h1><p>Sign in to manage your Luxoria Scents store.</p><label>Password<input id="adminPassword" type="password" placeholder="Enter admin password" required></label><button class="btn gold full">Sign In</button><small>Use the administrator password created during Hostinger setup.</small><p id="loginError" class="error"></p></form></div>
+<div id="app" class="app hidden">
+<aside class="sidebar"><div class="brand"><img src="assets/Minimal LUXORIA SCENTS Logo.png"><span>ADMIN PANEL</span></div><nav id="nav"><button class="active" data-view="overview">▦ <span>Overview</span></button><button data-view="products">◇ <span>Products</span></button><button data-view="orders">▤ <span>Orders & Sales</span></button><button data-view="inventory">▥ <span>Inventory</span></button><button data-view="content">✎ <span>Website Content</span></button><button data-view="blogs">▧ <span>Blogs</span></button><button data-view="history">◷ <span>Activity History</span></button><button data-view="visitors">● <span>Visitor Analytics</span></button></nav><div class="side-bottom"><a href="index.html" target="_blank">↗ View Website</a><button id="logout">⇥ Sign Out</button></div></aside>
+<main class="main"><header class="topbar"><div><span class="eyebrow">LUXORIA SCENTS</span><h2 id="pageTitle">Overview</h2></div><div class="top-actions"><span class="live-dot">LOCAL STORE</span><button id="topViewSite" class="btn outline">View Website ↗</button></div></header><div id="view" class="view"></div><footer>Luxoria Scents Admin · Orders and website changes sync with the live store</footer></main></div>
+<div id="modal" class="modal hidden"><div class="modal-box"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div><div id="toast" class="toast"></div>
+<script src="admin.js"></script></body></html>

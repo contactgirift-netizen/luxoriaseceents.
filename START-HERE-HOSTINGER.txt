@@ -1,0 +1,28 @@
+LUXORIA SCENTS — HOSTINGER INSTALLATION (START HERE)
+
+IMPORTANT: This ZIP must be extracted into the exact Document Root configured for luxoriascents.com. Usually this is /domains/luxoriascents.com/public_html, but confirm in hPanel. Do not assume an empty public_html means the domain is served from there.
+
+1) In Hostinger hPanel, open Websites > Manage > File Manager.
+2) Confirm the domain's Document Root in the website/domain settings.
+3) Open that exact folder. Upload this ZIP and extract it directly there. Do not extract into an extra nested folder.
+4) Confirm index.html, admin.html, api.php, setup.php, assets/ and data/ are directly in that folder.
+5) Confirm the hosting plan has PHP 8+ enabled.
+6) Open https://luxoriascents.com/setup.php and create an admin password of at least 12 characters.
+7) After setup reports success, delete setup.php. Do not delete api.php, config.php, data/ or assets/.
+8) Open https://luxoriascents.com/admin.html and sign in.
+9) Test one small content change and press Save. Refresh the public site in a private/incognito window.
+
+LIVE DASHBOARD
+Products, product stock/prices/images, blogs, announcement, supported page heading/intro/body fields, and selected key images are stored on the hosting server through api.php. Product/blog/image uploads require PHP sessions, Fileinfo and write permission for data/ and assets/uploads/.
+
+VS CODE CHANGES
+Editing files in VS Code on your computer does NOT automatically change the live website. After changing HTML/CSS/JS or replacing built-in images, upload the changed files/folders to the same Document Root (overwrite the old versions). Dashboard content changes are separate and save directly to the server. For automatic code deployment, configure Git deployment or an FTP/SFTP sync workflow.
+
+TROUBLESHOOTING
+- If the domain still shows the old site while this folder is empty, the domain is likely using a different Document Root, proxy/CDN, or cached copy. Verify Document Root before deleting or uploading anything else.
+- If /setup.php returns 404, the ZIP is not in the domain's active Document Root.
+- If API reports Setup required, complete setup.php.
+- If dashboard saves fail, check PHP error logs and write permissions for data/ and assets/uploads/.
+- Keep a backup of data/store.json and assets/uploads/.
+
+This package includes Luxoria product imagery and sample testimonial copy. Sample testimonials are illustrative, not verified customer reviews.

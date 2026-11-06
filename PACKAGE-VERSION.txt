@@ -1,0 +1,2 @@
+Luxoria Scents Hostinger Live CMS - deployment package v2
+Root-level website files. Extract into the domain Document Root.
